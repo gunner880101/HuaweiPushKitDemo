@@ -34,7 +34,9 @@ public class MainActivity extends AppCompatActivity {
             try{
                 String appId = AGConnectServicesConfig.fromContext(MainActivity.this).getString("client/app_id");
                 String token = HmsInstanceId.getInstance(MainActivity.this).getToken(appId, "HCM");
+                Log.i(TAG, "get appId:" + appId);
                 Log.i(TAG, "get token:" + token);
+
                 if (!TextUtils.isEmpty(token)){
                     showToken(token);
                     sendRegTokenToServer(token);
