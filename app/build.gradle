@@ -18,10 +18,10 @@ android {
 
     signingConfigs {
         release {
-            keyAlias 'yesonghai'
-            keyPassword 'ysh9511771'
+            keyAlias 'key'
+            keyPassword 'wjdgidtns1124'
             storeFile file('../keystore.jks')
-            storePassword 'ysh9511771'
+            storePassword 'wjdgidtns1124'
         }
     }
 
